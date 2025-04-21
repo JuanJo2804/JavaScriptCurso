@@ -11,18 +11,18 @@
 
     //**********************************  Explicaiones basicas del lenguaje ******************************************************************
 
-    var nombre = "Juan";
+/*     var nombre = "Juan";
 
     console.log(window);
 
     let saludo = `Hola ${nombre}`;
-    console.log(saludo);
+    console.log(saludo); */
 
 
     /*variable especiales de JavaScript*/
 
     // indefinado quiere decir que no ha sido inicializado
-    let indefinido;
+/*     let indefinido;
     console.log(indefinido);
     
     // nulo quiere decir que ha sido inicializado pero no tiene valor
@@ -32,15 +32,16 @@
 
     // NaN quiere decir que no es un número
     let noEsNumero = "Hola" * 2;
-    console.log(noEsNumero);
+    console.log(noEsNumero); */
 
 
 
     //******************************************** Funciones ********************************************************
 
     // Funcion declarada
+    //puede ser llamada en cualquier parte del codigo, incluso antes de ser declarada
 
-    function estoEsUnaFuncion() {
+/*     function estoEsUnaFuncion() {
         console.log("Hola soy una funcion declarada");
     }
     estoEsUnaFuncion();
@@ -51,12 +52,14 @@
     console.log(suma(2, 3));
 
     // Funcion expresada
+    //no puede se llamda antes de ser declarada
     const resta = function(a, b) {
         return a - b;
     }
     console.log(resta(5, 3));
 
     // Funcion de flecha
+    //
     const multiplicacion = (a, b) => {
         return a * b;
     }
@@ -68,7 +71,89 @@
 
     // Funcion de flecha con un solo argumento
     const cuadrado = a => a * a;
-    console.log(cuadrado(4));
+    console.log(cuadrado(4)); */
+
+
+
+    //**********************************  Arrays ******************************************************************
+
+    /* const a = [];
+    const b = [1,true,"Hola",null,["a","b","c"]];
+    console.log(b);
+    console.log(b[2]);
+    console.log(b.length);
+    console.log(b[4][0]);
+
+    const c = Array(100).fill(1);
+    console.log(c);
+
+    
+    //Ya no es tan comun
+    const e = new Array();
+    console.log(e);
+
+
+    const colores = ["rojo", "verde", "azul"];
+    colores.forEach(function(elemento, index) {
+        console.log(`<li id="${index}">${elemento}</li>`);
+    });
+ */
+
+    //**********************************  Objetos ******************************************************************
+
+    //un objeto es una coleccion de propiedades y metodos
+
+
+    //let a = new String("Hola");
+    //console.log(a);
+
+ /*    const juan = {
+        nombre: "juan ",
+        apellido: "Ocampo",
+        edad: 20,
+        pasatiempos: ["futbol", "musica", "videojuegos"],
+        direccion: {
+            ciudad: "Medellin",
+            pais: "Colombia"
+        },
+        saludar: function() {
+            console.log("Hola soy " + this.nombre + "" + this.apellido);
+            return "mensaje de retorno";
+        },
+        decirMiNombre(){
+            console.log(`hola soy ${this.nombre}${this.apellido} y tengo ${this.edad} años`);
+        }
+    }
+
+
+    juan.saludar();
+    juan.decirMiNombre();
+    console.log(juan.nombre);
+    console.log(juan.direccion.ciudad);
+
+    console.log(Object.keys(juan)); // devuelve un array con las claves del objeto
+    console.log(Object.values(juan)); // devuelve un array con los valores del objeto
+
+    console.log(juan.hasOwnProperty("nombre")); // devuelve true si el objeto tiene la propiedad
+    console.log(juan.hasOwnProperty("telefono")); // devuelve false si el objeto no tiene la propiedad
+
+ */
+
+    //**********************************  Tipos de operadores ******************************************************************
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
 </script>
