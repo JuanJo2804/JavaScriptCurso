@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "ritwickdey.liveserver",
+        "ms-vscode.js-debug-nightly",
+        "dbaeumer.vscode-eslint",
+        "formulahendry.code-runner"
+    ]
+}
