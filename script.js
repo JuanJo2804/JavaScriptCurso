@@ -3,7 +3,7 @@
 
 //**********************************  Explicaiones basicas del lenguaje ******************************************************************
 
-var nombre = "Juan";
+/* var nombre = "Juan";
 
 console.log(window);
 
@@ -11,7 +11,7 @@ let saludo = `Hola ${nombre}`;
 console.log(saludo);
 
 
-/*variable especiales de JavaScript*/
+//variable especiales de JavaScript
 
 // indefinado quiere decir que no ha sido inicializado
 let indefinido;
@@ -24,14 +24,14 @@ console.log(nulo);
 
 // NaN quiere decir que no es un número
 let noEsNumero = "Hola" * 2;
-console.log(noEsNumero);
+console.log(noEsNumero); */
 
 
 
 //******************************************** Funciones ********************************************************
 
 // Funcion declarada
-
+/* 
 function estoEsUnaFuncion() {
     console.log("Hola soy una funcion declarada");
 }
@@ -60,4 +60,38 @@ console.log(division(6, 3));
 
 // Funcion de flecha con un solo argumento
 const cuadrado = a => a * a;
-console.log(cuadrado(4));
+console.log(cuadrado(4)); 
+
+*/
+
+ 
+        const juan = {
+        nombre: "juan ",
+        apellido: "Ocampo",
+        edad: 20,
+        pasatiempos: ["futbol", "musica", "videojuegos"],
+        direccion: {
+            ciudad: "Medellin",
+            pais: "Colombia"
+        },
+        saludar: function() {
+            console.log("Hola soy " + this.nombre + "" + this.apellido);
+            return "mensaje de retorno";
+        },
+        decirMiNombre(){
+            console.log(`hola soy ${this.nombre}${this.apellido} y tengo ${this.edad} años`);
+        }
+    }
+
+
+    juan.saludar();
+    juan.decirMiNombre();
+    console.log(juan.nombre);
+    console.log(juan.direccion.ciudad);
+
+    console.log(Object.keys(juan)); // devuelve un array con las claves del objeto
+    console.log(Object.values(juan)); // devuelve un array con los valores del objeto
+
+    console.log(juan.hasOwnProperty("nombre")); // devuelve true si el objeto tiene la propiedad
+    console.log(juan.hasOwnProperty("telefono")); // devuelve false si el objeto no tiene la propiedad
+
